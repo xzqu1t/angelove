@@ -40,7 +40,7 @@ function myrand(min, max){
 		$('#my_heart_message').text(vala[s]);
 		$('#my_heart_message').fadeIn(650);
 		$('#heart_button').fadeIn(690);
-		$('#heart_button').text('�٨');
+		$('#heart_button').text('Любить');
 		$('#heart_button').fadeIn(700);
     }
 
