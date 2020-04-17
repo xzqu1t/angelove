@@ -1,7 +1,7 @@
 $( "#magic_button" ).click(function() {
 	$.ajax({
         type: "POST",
-        url: "mag_message.php", 
+        url: "mag_message.php",
         success: function(data) {
 			$( "#magic_button" ).fadeOut(300);
 			$( "#magic_window #second_magic_img" ).fadeOut(500);
@@ -19,13 +19,13 @@ $( "#more_magic" ).click(function() {
 });
 	 vala = Array();
 
-    vala['11-11']='Я тебя люблю ашельный лягушонок';
+    vala['11-11']='СЏ С‚РµР±СЏ Р»СЋР±Р»СЋ Р°С€РµР»СЊРЅС‹Р№ Р»СЏРіСѓС€РѕРЅРѕРє';
 
-    
+
 function myrand(min, max){
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-	
+
 	function gadan(){
         s = ''; ss = '';
         for(i=1;i<=4;i++)
@@ -40,10 +40,10 @@ function myrand(min, max){
 		$('#my_heart_message').text(vala[s]);
 		$('#my_heart_message').fadeIn(650);
 		$('#heart_button').fadeIn(690);
-		$('#heart_button').text('ЕЩЁ');
+		$('#heart_button').text('пїЅЩЁ');
 		$('#heart_button').fadeIn(700);
     }
-	
+
 	$( "#heart_button" ).click(function(){
 		gadan();
 		$( "#my_gif img" ).fadeOut(300);
@@ -51,5 +51,3 @@ function myrand(min, max){
 		$( "#my_gif_show" ).attr("src","./images/v_serdce_"+gif_show+".png");
 		$( "#my_gif_show" ).fadeIn(50);
 	});
-	
- 
